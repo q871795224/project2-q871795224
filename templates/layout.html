@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatting</title>
+	{% block javascripts %} {% endblock %}
+	<link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/project2.css') }}">
+    {% block styles %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+	<h1>{% block heading %}{% endblock %}</h1>
+	{% block body %}{% endblock %}
+    </body>
+</html>

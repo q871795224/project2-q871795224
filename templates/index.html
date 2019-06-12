@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block javascripts %}
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+{% endblock %}
+
+{% block body %}
+  <h2 id="myname"></h2>
+    <div class="welcome-block">
+        <div class="welcome-container">
+            <div style="text-align: center">
+                <h3>Welcome to Chatroom!</h3>
+                <p> Please introduce your name. </p>
+	            <form id="login_form" action="{{ url_for('flackchat') }}", method="post">
+	                Display Name:
+                    <input id="dname_field" type="text" name="displayname" size="50" required><br>
+	                <button name="signin" id="signin">Sign In</button>
+	            </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+      text-align: center;
+      font-size: 18pt;
+}
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+select, #channels {
+       	min-width: 100px;
+}
+
+input [type=text] {
+      margin: 4px 0;
+      padding: 12px 12px;
+      box-sizing: border-box;
+      font-size: 14pt;
+}
+
+form {
+      margin: 2px 0;
+      padding: 2px 2px;
+      box-sizing: border-box;
+}
+
+textarea {
+	 font-size: 14pt;
+}
+
+div {
+    padding: 5px;
+    margin: 5px;
+}
+.main-content
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.centered {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	  padding: 5px;
+}	
+#small { 
+       width: 25%;
+}
+h1 {
+   font-family: "Times New Roman", sans-serif;
+   font-size: 24pt;
+   text-align: center;
+   color: black;
+}
+h2 {
+   font-family: "Times New Roman", sans-serif;
+   font-size: 18pt;
+   text-align: center;
+   color: black;
+}
+
+.dname {
+       font-family: "Times New Roman", sans-serif;
+       font-size: 12pt;
+       padding-left: 20px;
+       text-align: right;
+       color: #202801;
+}
+
+table {
+      border-collapse: collapse;
+      width: 75%;
+}
+th, td {
+    padding: 5px;
+}
+
+th {
+   height: 35px;
+   text-align: left;
+   background-color: #99a0aa;
+}
+td {
+   vertical-align: top;
+   text-align: left;
+}
+
+.hoverTable{
+      width:100%; 
+    border-collapse:collapse; 
+    }
+
+.hoverTable tr{
+	    background: #99a0aa;
+    }
+/* Define the hover highlight color for the table row */
+.hoverTable tr:hover {
+         background-color: #99a0aa;
+ }
+
+#message_list {
+   background-color: #99a0aa;
+   border: none;
+   width: 100%;
+   height: auto;
+}
+
+#message_list td {
+   padding: 7px;
+   border: black 1px solid;
+}
+
+.newchn_msg {
+     width: 100%;	
+     height: auto;
+}
+.channelListBlock{
+    width: 220px;
+    background: limegreen;
+    height: 80vh;
+    border-right: 1px solid rgba(0,0,0,.125);
+    color: white;
+
+    .list-group-item
+    {
+        background-color: black;
+        border: 0;
+        font-size: 13px;
+        padding: 0.35rem 1.25rem;
+    }
+
+    .list-group-header
+    {
+        font-size: 15px;
+        padding: .75rem 1.25rem;
+    }
+}
+#hoverTable{
+    background-color: palegreen;
+}
+.messageBlock{
+    display: flex;
+    height: 80vh;
+    flex: 6;
+    flex-direction: column;
+    background-color: #28a745;
+}
